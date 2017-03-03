@@ -1,0 +1,31 @@
+{
+  "name": "persist.js",
+  "version": "0.0.1",
+  "description": "Offline storage for browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --verbose test/**/*.test.js",
+    "lint": "standard 'lib/**/*.js' 'test/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeodou/persist.js.git"
+  },
+  "keywords": [
+    "persist"
+  ],
+  "author": "xeodou@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xeodou/persist.js/issues"
+  },
+  "homepage": "https://github.com/xeodou/persist.js#readme",
+  "dependencies": {
+    "blueimp-md5": "^2.7.0",
+    "whatwg-fetch": "^2.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "standard": "^8.6.0"
+  }
+}
