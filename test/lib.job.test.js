@@ -31,7 +31,7 @@ test('should new a Job', t => {
 test.cb('should process a task.', t => {
   t.plan(2)
 
-  job.process(simpleJob, function(err, data) {
+  job.process(simpleJob, function (err, data) {
     t.is(err, null)
     t.deepEqual(data, lorem.payload)
     t.end(err)

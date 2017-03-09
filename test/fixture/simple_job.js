@@ -6,6 +6,6 @@
 
 'use strict'
 
-module.exports = function(job, done) {
+module.exports = function (job, done) {
   done(null, job.payload)
 }
