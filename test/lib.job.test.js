@@ -34,7 +34,7 @@ test.cb('should process a task.', t => {
   job.process(simpleJob, function(err, data) {
     t.is(err, null)
     t.deepEqual(data, lorem.payload)
-    t.end()
+    t.end(err)
   })
 })
 

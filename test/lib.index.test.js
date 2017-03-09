@@ -13,11 +13,15 @@ const Persist = require('../lib')
 
 const instance = Persist.instance()
 
-instance.register('simpleJob', simpleJob)
-
 test('should register a job.', t => {
   instance.register('simpleJob', simpleJob)
   t.is(typeof instance.jobTypes['simpleJob'], 'function')
+})
+
+test('should throw an error.', t => {
+  t.throws(() => {
+    instance.register('lorem', {})
+  })
 })
 
 test.cb('should create a job.', t => {
